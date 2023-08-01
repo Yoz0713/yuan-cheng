@@ -1,0 +1,60 @@
+@import "_config";
+@import "_index";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    transition: background-color 1s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate_reverse {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes more {
+    0% {
+        transform: scaleX(1) translateX(0);
+        opacity: 1;
+    }
+
+    25% {
+        transform: scaleX(0.7) translateX(0);
+    }
+
+    60% {
+        transform: scaleX(1.1) translateX(25px);
+        opacity: 0;
+    }
+
+    61% {
+        transform: scaleX(1.1) translateX(-25px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scaleX(1) translateX(0);
+        opacity: 1;
+    }
+}
