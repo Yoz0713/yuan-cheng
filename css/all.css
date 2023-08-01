@@ -98,6 +98,56 @@
   transform: translateY(1.3vw);
 }
 
+#loading-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  background-color: #E6E8E9;
+  width: 100%;
+  height: 100vh;
+  transition: opacity 1s;
+  pointer-events: none;
+}
+#loading-page .outerBox {
+  -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 80%, 0% 80%);
+          clip-path: polygon(0 20%, 100% 20%, 100% 80%, 0% 80%);
+  transition: 1.2s;
+}
+#loading-page .outerBox .box {
+  position: relative;
+  width: 7vw;
+  height: 7vw;
+  background-color: #fff;
+  -webkit-clip-path: url("#loading-logo");
+          clip-path: url("#loading-logo");
+}
+#loading-page .outerBox .box .blue {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #005293;
+  transform-origin: center bottom;
+  transform: scaleY(0);
+  animation: loading 2.2s ease-in-out forwards infinite;
+}
+#loading-page .outerBox .box .active {
+  animation: none;
+}
+#loading-page > .active {
+  background-color: #005293;
+}
+#loading-page svg {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .titleBox h2 {
   font-size: 1.875vw;
   letter-spacing: 0.15em;
@@ -332,6 +382,7 @@ span.blind {
   top: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .index .first-page .videoBox video {
   position: absolute;
@@ -342,7 +393,7 @@ span.blind {
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 0;
-  transition: 0.5s;
+  transition: opacity 0.5s;
   filter: brightness(0.6);
 }
 .index .first-page .videoBox .active {
@@ -669,5 +720,18 @@ body {
   100% {
     transform: scaleX(1) translateX(0);
     opacity: 1;
+  }
+}
+@keyframes loading {
+  0% {
+    transform: scaleY(0.2);
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 0;
   }
 }

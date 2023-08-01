@@ -1,6 +1,6 @@
 
-
 window.onload = () => {
+    loadingEffect()
     function split() {
         splitText(".titleBox h2");
 
@@ -99,6 +99,19 @@ window.onload = () => {
     bannerHoverEffect()
 
     function pageAnimation() {
+        const firstPage = gsap.timeline()
+
+        firstPage.from(".first-page video", {
+            scale: 2,
+            duration: 3
+        }).from(".first-page .roundBox", {
+            x: -45,
+            opacity: 0,
+            duration: 1.5
+        }, "<+1.5")
+
+
+
         const secondPage = gsap.timeline({
             scrollTrigger: {
                 trigger: ".second-page",
