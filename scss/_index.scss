@@ -25,7 +25,7 @@
                     p {
                         font-size: pxConvertor(210);
                         font-weight: 300;
-                        opacity: 0.2;
+                        opacity: 0.35;
                         transition: 0.3s;
                         line-height: 0.84;
                     }
@@ -523,7 +523,7 @@
                         .box {
                             position: relative;
                             z-index: 10;
-                            background-color: #E6E8E9;
+                            background-color: #9CA5AA;
                             padding-bottom: 6px;
 
                             .date {

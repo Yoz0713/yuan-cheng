@@ -1,11 +1,12 @@
 
 window.onload = () => {
-    loadingEffect()
+    // loadingEffect()
     function split() {
         splitText(".titleBox h2");
 
     }
     split()
+
     function bannerHoverEffect() {
         const hoverBox = document.querySelectorAll(".first-page .hover-area .box")
         const hoverArea = document.querySelector(".first-page .hover-area")
@@ -101,14 +102,15 @@ window.onload = () => {
     function pageAnimation() {
         const firstPage = gsap.timeline()
 
-        firstPage.from(".first-page video", {
-            scale: 2,
-            duration: 3
-        }).from(".first-page .roundBox", {
-            x: -45,
+        firstPage.from(".first-page .roundBox", {
+
             opacity: 0,
             duration: 1.5
-        }, "<+1.5")
+        }).from(".first-page .ycce", {
+
+            opacity: 0,
+            duration: 1.5
+        }, "<+0.7")
 
 
 
@@ -238,23 +240,26 @@ window.onload = () => {
             })
         })
 
-        const body = document.querySelector("body")
-        const rangeUnit = (body.clientHeight - document.querySelector(".first-page").clientHeight) / 3
-        window.onscroll = () => {
-            if (window.scrollY < rangeUnit * 1.2) {
-                body.style.backgroundColor = "#9CA5AA"
-            } else if (window.scrollY > rangeUnit * 1.2 && window.scrollY < rangeUnit * 2 * 1.2) {
 
-
-                body.style.backgroundColor = "#e0ded5"
-            } else if (window.scrollY > rangeUnit * 2 * 1.2 && window.scrollY < rangeUnit * 3 * 1.2) {
-                body.style.backgroundColor = "#E6E8E9"
-            }
-        }
 
 
     }
 
     pageAnimation()
 
+    function changeBodyColor() {
+        const body = document.querySelector("body")
+        const rangeUnit = (body.clientHeight - document.querySelector(".first-page").clientHeight) / 3
+        if (window.scrollY < rangeUnit * 1.2) {
+            body.style.backgroundColor = "#9CA5AA"
+        } else if (window.scrollY > rangeUnit * 1.2 && window.scrollY < rangeUnit * 2 * 1.2) {
+            body.style.backgroundColor = "#e0ded5"
+        } else if (window.scrollY > rangeUnit * 2 * 1.2 && window.scrollY < rangeUnit * 3 * 1.2) {
+            body.style.backgroundColor = "#9CA5AA"
+        }
+    }
+    changeBodyColor()
+    window.onscroll = () => {
+        changeBodyColor()
+    }
 }

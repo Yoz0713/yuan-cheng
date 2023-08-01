@@ -148,6 +148,20 @@
   pointer-events: none;
 }
 
+#footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #736357;
+}
+#footer p {
+  font-size: 0.8333333333vw;
+  font-family: "Microsoft JhengHei", serif;
+  color: #fff;
+  padding: 1.6380208333vw 0;
+  letter-spacing: 0.1em;
+}
+
 .titleBox h2 {
   font-size: 1.875vw;
   letter-spacing: 0.15em;
@@ -222,7 +236,7 @@ span.blind {
 .index .first-page .roundBox .ycce .box p {
   font-size: 10.9375vw;
   font-weight: 300;
-  opacity: 0.2;
+  opacity: 0.35;
   transition: 0.3s;
   line-height: 0.84;
 }
@@ -636,7 +650,7 @@ span.blind {
 .index .forth-page .projectBox ul li .paraBox .box {
   position: relative;
   z-index: 10;
-  background-color: #E6E8E9;
+  background-color: #9CA5AA;
   padding-bottom: 6px;
 }
 .index .forth-page .projectBox ul li .paraBox .box .date {

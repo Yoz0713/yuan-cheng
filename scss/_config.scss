@@ -198,6 +198,20 @@ $title_p: #333333;
     }
 }
 
+#footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #736357;
+
+    p {
+        font-size: pxConvertor(16);
+        font-family: "Microsoft JhengHei", serif;
+        color: #fff;
+        padding: pxConvertor(31.45) 0;
+        letter-spacing: 0.1em;
+    }
+}
 
 .titleBox {
     h2 {
