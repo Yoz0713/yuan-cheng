@@ -17,6 +17,12 @@
                 color: #fff;
                 width: 55%;
 
+                &> :nth-child(1) {
+                    &> :nth-child(2) {
+                        transform: translateX(0.7vw);
+                    }
+                }
+
                 .box {
                     display: flex;
                     justify-content: space-between;

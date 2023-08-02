@@ -49,6 +49,7 @@
 #menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -231,6 +232,9 @@ span.blind {
 .index .first-page .roundBox .ycce {
   color: #fff;
   width: 55%;
+}
+.index .first-page .roundBox .ycce > :nth-child(1) > :nth-child(2) {
+  transform: translateX(0.7vw);
 }
 .index .first-page .roundBox .ycce .box {
   display: flex;
