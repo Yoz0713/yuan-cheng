@@ -22,12 +22,8 @@ window.onload = () => {
                 //處理左下標題
                 titleArea.forEach((item, i) => {
                     if (item.dataset.title === e.target.dataset.hover) {
-
                         item.classList.add("active")
-
-
                     } else {
-
                         item.classList.remove("active")
                     }
                 })

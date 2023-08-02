@@ -255,14 +255,13 @@
                 width: pxConvertor(375);
                 color: #fff;
 
-
                 .title {
                     font-size: pxConvertor(26);
                     font-weight: 400;
                     margin-bottom: pxConvertor(10);
                     letter-spacing: 0.6em;
                     opacity: 0;
-                    transition: 1s;
+                    transition: 1.5s;
                     filter: blur(3px);
                     transform: translateX(-30px);
 
@@ -295,7 +294,7 @@
                     letter-spacing: 0.07em;
                     line-height: 2;
                     opacity: 0;
-                    transition: 1s;
+                    transition: 1.5s;
                     filter: blur(3px);
                     transform: translateX(-30px);
                     font-family: "Microsoft JhengHei", serif;
@@ -307,14 +306,12 @@
                     transform: translateX(0);
                     filter: blur(0);
                     opacity: 1;
-                    transition-delay: 0.5s;
                 }
 
                 p {
                     transform: translateX(0);
                     filter: blur(0);
                     opacity: 1;
-                    transition-delay: 1s;
                 }
             }
         }
