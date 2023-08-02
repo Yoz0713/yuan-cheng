@@ -10,8 +10,8 @@
             align-items: center;
             position: relative;
             z-index: 5;
-            width: pxConvertor(546.9);
-            height: pxConvertor(546.9);
+            width: pxConvertor(538);
+            height: pxConvertor(537.3);
 
             .ycce {
                 color: #fff;
@@ -50,7 +50,7 @@
                     transition: 0.3s;
 
                     p {
-                        font-size: pxConvertor(24);
+                        font-size: pxConvertor(16);
                         letter-spacing: 0.05em;
                     }
                 }
@@ -64,7 +64,7 @@
                     left: 0;
                     right: 0;
                     margin: 0 auto;
-                    top: -2.6vw;
+                    top: -1.8vw;
                 }
 
                 .craft-box {
@@ -73,11 +73,8 @@
                     position: absolute;
                     right: 0;
                     height: 100%;
-                    right: -4.3vw;
+                    right: -4.2vw;
 
-                    p {
-                        transform: rotate(90deg);
-                    }
                 }
 
                 .cohesion-box {
@@ -85,7 +82,7 @@
                     left: 0;
                     right: 0;
                     margin: 0 auto;
-                    bottom: -2.7vw;
+                    bottom: -2vw;
                 }
 
                 .eco-box {
@@ -94,12 +91,7 @@
                     position: absolute;
                     right: 0;
                     height: 100%;
-                    left: -3.5vw;
-
-                    p {
-                        transform: rotate(90deg);
-
-                    }
+                    left: -2.9vw;
                 }
             }
 
@@ -124,8 +116,8 @@
 
                     .dot {
                         position: absolute;
-                        width: pxConvertor(14);
-                        height: pxConvertor(14);
+                        width: pxConvertor(3.01);
+                        height: pxConvertor(3.01);
                         border-radius: 50%;
                         background-color: #fff;
                         transition: 0.3s;
@@ -134,28 +126,28 @@
                             left: 0;
                             right: 0;
                             margin: 0 auto;
-                            top: -0.4vw;
+                            top: -0.2vw;
                         }
 
                         &:nth-child(2) {
                             top: 0;
                             bottom: 0;
                             margin: auto 0;
-                            right: -0.37vw;
+                            right: -0.2vw;
                         }
 
                         &:nth-child(3) {
                             top: 0;
                             bottom: 0;
                             margin: auto 0;
-                            left: -0.37vw;
+                            left: -0.2vw;
                         }
 
                         &:nth-child(4) {
                             left: 0;
                             right: 0;
                             margin: 0 auto;
-                            bottom: -0.4vw;
+                            bottom: -0.2vw;
                         }
 
                         .active-box {
@@ -163,20 +155,36 @@
                             justify-content: center;
                             align-items: center;
                             position: absolute;
-                            left: pxConvertor(-45);
+                            left: pxConvertor(-40);
                             bottom: 0;
                             top: 0;
                             margin: auto 0;
-                            width: pxConvertor(100);
-                            height: pxConvertor(100);
-                            background-color: #ffffff5d;
+                            width: pxConvertor(83.2261);
+                            height: pxConvertor(83.2261);
+                            background-color: #ffffff11;
                             border-radius: 50%;
                             color: #fff;
                             letter-spacing: 0.1em;
                             font-size: pxConvertor(16);
                             opacity: 0;
                             transition: 0.3s;
-                            border: 1px solid #fff;
+
+                            &::after {
+                                display: block;
+                                content: "";
+                                width: 90%;
+                                height: 90%;
+                                border-radius: 50%;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                bottom: 0;
+                                right: 0;
+                                margin: auto;
+                                background-color: #ffffff;
+                                opacity: 0.15;
+                                z-index: 2;
+                            }
                         }
                     }
 
@@ -244,39 +252,53 @@
                 position: absolute;
                 left: pxConvertor(118.79);
                 bottom: pxConvertor(88.84);
-                width: pxConvertor(480);
+                width: pxConvertor(375);
                 color: #fff;
 
 
                 .title {
-                    font-size: pxConvertor(32);
+                    font-size: pxConvertor(26);
                     font-weight: 400;
-                    margin-bottom: 1.2vw;
-                    letter-spacing: 0.1em;
+                    margin-bottom: pxConvertor(10);
+                    letter-spacing: 0.6em;
                     opacity: 0;
-                    transition: 1.7s;
+                    transition: 1s;
                     filter: blur(3px);
                     transform: translateX(-30px);
 
                     span {
-                        font-size: pxConvertor(36);
+                        position: relative;
+                        font-size: pxConvertor(32);
+                        margin-right: 1.6vw;
+                        letter-spacing: 0.2em;
 
+                        &::after {
+                            display: block;
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            margin: auto 0;
+                            right: -0.8vw;
+                            width: pxConvertor(3);
+                            height: pxConvertor(3);
+                            background-color: #fff;
+                            border-radius: 50%;
+                        }
                     }
 
-                    &::first-letter {
-                        font-size: pxConvertor(60);
-                    }
                 }
 
                 p {
-                    font-size: pxConvertor(23);
+                    font-size: pxConvertor(18);
                     font-weight: 200;
                     letter-spacing: 0.07em;
                     line-height: 2;
                     opacity: 0;
-                    transition: 1.7s;
+                    transition: 1s;
                     filter: blur(3px);
                     transform: translateX(-30px);
+                    font-family: "Microsoft JhengHei", serif;
                 }
             }
 
@@ -285,14 +307,14 @@
                     transform: translateX(0);
                     filter: blur(0);
                     opacity: 1;
-                    transition-delay: 1s;
+                    transition-delay: 0.5s;
                 }
 
                 p {
                     transform: translateX(0);
                     filter: blur(0);
                     opacity: 1;
-                    transition-delay: 1.45s;
+                    transition-delay: 1s;
                 }
             }
         }
@@ -416,16 +438,16 @@
             .imgBox {
                 position: relative;
                 overflow: hidden;
-                width: pxConvertor(467.9);
-                height: pxConvertor(701.9);
+                width: pxConvertor(450.9);
+                height: pxConvertor(705.9);
                 border-radius: 30px;
                 margin-bottom: 8vw;
 
                 img {
                     position: absolute;
-                    right: -13%;
+                    width: 100%;
                     height: 100%;
-                    width: auto;
+                    object-fit: cover;
                 }
             }
         }
@@ -450,6 +472,7 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin-bottom: 8vw;
 
         .titleBox {
             position: relative;
@@ -493,7 +516,7 @@
 
         .projectBox {
             width: pxConvertor(1452);
-            margin-bottom: 6vw;
+
 
             ul {
                 display: flex;
@@ -502,7 +525,7 @@
 
                 li {
                     .imgBox {
-                        border-radius: 20px;
+                        border-radius: 50px 0 50px 0;
                         overflow: hidden;
                         width: pxConvertor(342.37);
                         height: pxConvertor(256.522);

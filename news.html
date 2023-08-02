@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="./style/all.min.css">
     <title>原成營造</title>
 </head>
+<style>
+    .news img {
+        display: none !important;
+        cursor: pointer;
+    }
+
+    .news .active {
+        display: block !important;
+    }
+</style>
 
 <body>
 
@@ -52,13 +62,22 @@
         </div>
     </menu>
     <main class="news">
-        <div class="temporary-page">
-            <p>頁面尚未完成</p>
-        </div>
+        <img src="./img/fakeInnerPage/news01.jpg" style="width: 100%;" class="newsPage active">
+        <img src="./img/fakeInnerPage/news02.jpg" style="width: 100%;" class="newsInner">
     </main>
 
 
     <script src="./js/news.js"></script>
+    <script>
+        document.querySelector(".news .newsPage").addEventListener("click", (e) => {
+            document.querySelector(".newsPage").classList.remove("active")
+            document.querySelector(".newsInner").classList.add("active")
+        })
+        document.querySelector(".news .newsInner").addEventListener("click", (e) => {
+            document.querySelector(".newsPage").classList.add("active")
+            document.querySelector(".newsInner").classList.remove("active")
+        })
+    </script>
 </body>
 
 </html>

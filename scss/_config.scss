@@ -80,7 +80,7 @@ $title_p: #333333;
     left: 0;
     width: 100%;
     padding: pxConvertor(49) pxConvertor(123) pxConvertor(70);
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.35) 50%, rgba(0, 0, 0, 0.15) 75%, transparent 100%);
+    // background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.35) 50%, rgba(0, 0, 0, 0.15) 75%, transparent 100%);
     z-index: 99;
     pointer-events: none;
 
@@ -89,7 +89,7 @@ $title_p: #333333;
     }
 
     .logoBox {
-        width: pxConvertor(180.7);
+        width: pxConvertor(162.186);
 
         a {
             width: 100%;
@@ -120,21 +120,25 @@ $title_p: #333333;
                     color: #fff;
 
                     p {
-                        font-size: pxConvertor(18);
                         transition: 0.4s;
                     }
 
                     .ch {
                         letter-spacing: 0.2em;
+                        font-size: pxConvertor(16);
+                    }
+
+                    .en {
+                        font-size: pxConvertor(14);
                     }
 
                     &:hover {
                         .ch {
-                            transform: translateY(-1.3vw);
+                            transform: translateY(-1.15vw);
                         }
 
                         .en {
-                            transform: translateY(1.3vw);
+                            transform: translateY(1.15vw);
                         }
                     }
                 }
@@ -203,12 +207,13 @@ $title_p: #333333;
     justify-content: center;
     width: 100%;
     background-color: #736357;
+    padding: pxConvertor(23) 0;
 
     p {
         font-size: pxConvertor(16);
         font-family: "Microsoft JhengHei", serif;
         color: #fff;
-        padding: pxConvertor(31.45) 0;
+
         letter-spacing: 0.1em;
     }
 }

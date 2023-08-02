@@ -190,13 +190,17 @@ window.onload = () => {
         const thirdPageBg = gsap.timeline({
             scrollTrigger: {
                 trigger: ".third-page .imgBox",
-                start: "top bottom",
+                start: "top 80%",
                 scrub: 1,
-                end: `+=${window.innerHeight}`
+                end: `+=${window.innerHeight * 1}`
             }
         });
-        thirdPageBg.from(".third-page .imgBox img", {
-            x: "20%",
+        thirdPageBg.fromTo(".third-page .imgBox img", {
+            filter: "brightness(0)",
+            scale: 1.2
+        }, {
+            filter: "brightness(1)",
+            scale: 1
         })
 
         const forthPage = gsap.timeline({

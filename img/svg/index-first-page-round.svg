@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 547.43 547.43">
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 538.25 537.54">
   <defs>
     <style>
       .cls-1 {
         fill: none;
         stroke: #fff;
         stroke-miterlimit: 10;
-        stroke-width: .5px;
+        stroke-width: .25px;
       }
     </style>
   </defs>
   <g id="_圖層_1-2" data-name="圖層 1">
-    <circle class="cls-1" cx="273.71" cy="273.71" r="273.46"/>
+    <g>
+      <path class="cls-1" d="M.12,219.14C20.22,108.91,106.4,21.74,216.11,.18"/>
+      <path class="cls-1" d="M219.23,537.42C110.4,517.35,24.16,432.85,1.51,324.95"/>
+      <path class="cls-1" d="M536.71,325.25c-22.38,106.04-106.19,189.42-212.46,211.16"/>
+      <path class="cls-1" d="M321.91,.12c109.77,21.46,196.03,108.58,216.22,218.8"/>
+    </g>
+    <g>
+      <line class="cls-1" x1="272.59" y1="189.69" x2="272.59" y2="258.63"/>
+      <line class="cls-1" x1="272.59" y1="286.97" x2="272.59" y2="355.92"/>
+      <line class="cls-1" x1="355.8" y1="270.44" x2="286.85" y2="270.44"/>
+      <line class="cls-1" x1="258.52" y1="270.44" x2="189.57" y2="270.44"/>
+    </g>
   </g>
 </svg>

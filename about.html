@@ -7,6 +7,35 @@
     <link rel="stylesheet" href="./style/all.min.css">
     <title>原成營造</title>
 </head>
+<style>
+    main img {
+        display: none !important;
+    }
+
+    .active {
+        display: block !important;
+    }
+
+    .about-menu {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        z-index: 100;
+        left: 0;
+        top: 38vw;
+        width: 100%;
+        height: 4.2vw;
+        gap: 0.8vw;
+
+
+    }
+
+    .box {
+        width: 7vw;
+        height: 100%;
+        cursor: pointer;
+    }
+</style>
 
 <body>
 
@@ -53,12 +82,34 @@
     </menu>
 
     <main class="about">
-        <div class="temporary-page">
-            <p>頁面尚未完成</p>
+
+        <div class="about-menu">
+            <div class="box "></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
         </div>
+        <img src="./img/fakeInnerPage/about01.jpg" style="width: 100%;" class="active">
+        <img src="./img/fakeInnerPage/about02.jpg" style="width: 100%;">
+        <img src="./img/fakeInnerPage/about03.jpg" style="width: 100%;">
+        <img src="./img/fakeInnerPage/about04.jpg" style="width: 100%;">
     </main>
 
     <script src="./js/about.js"></script>
+
+    <script>
+        const box = document.querySelectorAll(".about-menu .box")
+        const img = document.querySelectorAll(".about img")
+        box.forEach((item, i) => {
+
+            item.addEventListener("click", (item) => {
+                img.forEach((item) => {
+                    item.classList.remove("active")
+                })
+                img[i].classList.add("active")
+            })
+        })
+    </script>
 </body>
 
 </html>

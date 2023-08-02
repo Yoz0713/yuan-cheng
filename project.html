@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="./style/all.min.css">
     <title>原成營造</title>
 </head>
+<style>
+    .project img {
+        display: none !important;
+        cursor: pointer;
+    }
+
+    .project .active {
+        display: block !important;
+    }
+</style>
 
 <body>
 
@@ -52,13 +62,22 @@
         </div>
     </menu>
     <main class="project">
-        <div class="temporary-page">
-            <p>頁面尚未完成</p>
-        </div>
+        <img src="./img/fakeInnerPage/project01.jpg" style="width: 100%;" class="projectPage active">
+        <img src="./img/fakeInnerPage/project02.jpg" style="width: 100%;" class="projectInner">
     </main>
 
 
     <script src="./js/project.js"></script>
+    <script>
+        document.querySelector(".project .projectPage").addEventListener("click", (e) => {
+            document.querySelector(".projectPage").classList.remove("active")
+            document.querySelector(".projectInner").classList.add("active")
+        })
+        document.querySelector(".project .projectInner").addEventListener("click", (e) => {
+            document.querySelector(".projectPage").classList.add("active")
+            document.querySelector(".projectInner").classList.remove("active")
+        })
+    </script>
 </body>
 
 </html>
