@@ -53,9 +53,11 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2.5520833333vw 6.40625vw 3.6458333333vw;
+  padding: 0.78125vw 6.40625vw;
   z-index: 99;
   pointer-events: none;
+  background-color: transparent;
+  transition: background-color 0.5s;
 }
 #menu a {
   pointer-events: auto;

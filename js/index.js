@@ -1,6 +1,7 @@
 
 window.onload = () => {
     // loadingEffect()
+
     function split() {
         splitText(".titleBox h2");
 
@@ -259,7 +260,9 @@ window.onload = () => {
         }
     }
     changeBodyColor()
+    changeMenuColor()
     window.onscroll = () => {
+        changeMenuColor()
         changeBodyColor()
     }
 }
