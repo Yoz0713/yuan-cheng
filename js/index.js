@@ -16,6 +16,12 @@ window.onload = () => {
         const ycceBox = document.querySelectorAll(".ycce-box div")
         const dotBox = document.querySelectorAll(".first-page .dotBox .dot")
         const videos = document.querySelectorAll(".first-page .videoBox video")
+        let initVideo = videos[Math.floor(Math.random() * videos.length)].dataset.video;
+        videos.forEach((item) => {
+            if (item.dataset.video === initVideo) {
+                item.classList.add("active")
+            }
+        })
         hoverBox.forEach((item) => {
             item.addEventListener("mouseenter", (e) => {
                 e.stopPropagation()
@@ -85,7 +91,7 @@ window.onload = () => {
 
                 //處理背景影片
                 videos.forEach((item, i) => {
-                    if (item.dataset.video === "eco") {
+                    if (item.dataset.video === initVideo) {
                         item.classList.add("active")
                     } else {
                         item.classList.remove("active")

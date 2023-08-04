@@ -15,11 +15,10 @@ function changeMenuColor() {
     const menu = document.querySelector("#menu")
     const firstPageHeight = document.querySelector(".first-page").clientHeight
 
-    console.log(menu, firstPageHeight, window.scrollY)
     if (window.scrollY < firstPageHeight * 1) {
         menu.style.backgroundColor = "transparent"
     } else {
-        menu.style.backgroundColor = "#736357"
+        menu.style.backgroundColor = "#5f6c73"
     }
 
 }
