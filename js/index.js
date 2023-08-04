@@ -16,9 +16,15 @@ window.onload = () => {
         const ycceBox = document.querySelectorAll(".ycce-box div")
         const dotBox = document.querySelectorAll(".first-page .dotBox .dot")
         const videos = document.querySelectorAll(".first-page .videoBox video")
-        let initVideo = videos[Math.floor(Math.random() * videos.length)].dataset.video;
+        const randomIndex = Math.floor(Math.random() * videos.length)
+        let initDataSet = videos[randomIndex].dataset.video;
         videos.forEach((item) => {
-            if (item.dataset.video === initVideo) {
+            if (item.dataset.video === initDataSet) {
+                item.classList.add("active")
+            }
+        })
+        titleArea.forEach((item) => {
+            if (item.dataset.title === initDataSet) {
                 item.classList.add("active")
             }
         })
@@ -68,7 +74,7 @@ window.onload = () => {
             })
             hoverArea.addEventListener("mouseleave", (e) => {
                 titleArea.forEach((item, i) => {
-                    if (item.dataset.title === "eco") {
+                    if (item.dataset.title === initDataSet) {
                         item.classList.add("active")
                     } else {
                         item.classList.remove("active")
@@ -91,7 +97,7 @@ window.onload = () => {
 
                 //處理背景影片
                 videos.forEach((item, i) => {
-                    if (item.dataset.video === initVideo) {
+                    if (item.dataset.video === initDataSet) {
                         item.classList.add("active")
                     } else {
                         item.classList.remove("active")
