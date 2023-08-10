@@ -32,10 +32,10 @@ $title_p: #333333;
 }
 
 .phone {
-    display: none;
+    display: none !important;
 
     @include tablet() {
-        display: block;
+        display: block !important;
     }
 }
 
