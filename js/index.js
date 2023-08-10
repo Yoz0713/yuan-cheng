@@ -260,17 +260,7 @@ window.onload = () => {
 
     pageAnimation()
 
-    function changeBodyColor() {
-        const body = document.querySelector("body")
-        const rangeUnit = (body.clientHeight - document.querySelector(".first-page").clientHeight) / 3
-        if (window.scrollY < rangeUnit * 1.2) {
-            body.style.backgroundColor = "#9CA5AA"
-        } else if (window.scrollY > rangeUnit * 1.2 && window.scrollY < rangeUnit * 2 * 1.2) {
-            body.style.backgroundColor = "#e0ded5"
-        } else if (window.scrollY > rangeUnit * 2 * 1.2 && window.scrollY < rangeUnit * 3 * 1.2) {
-            body.style.backgroundColor = "#9CA5AA"
-        }
-    }
+
     changeBodyColor()
     changeMenuColor()
     window.onscroll = () => {

@@ -7,16 +7,6 @@
     <link rel="stylesheet" href="./style/all.min.css">
     <title>原成營造</title>
 </head>
-<style>
-    .project img {
-        display: none !important;
-        cursor: pointer;
-    }
-
-    .project .active {
-        display: block !important;
-    }
-</style>
 
 <body>
 
@@ -61,30 +51,54 @@
             </ul>
         </div>
     </menu>
-    <main class="project">
-        <img src="./img/fakeInnerPage/project01.jpg" style="width: 100%;" class="projectPage active">
-        <img src="./img/fakeInnerPage/project02.jpg" style="width: 100%;" class="projectInner">
-        <img src="./img/fakeInnerPage/project-progress.jpg" style="width: 100%;" class="projectInner">
+
+    <main class="about about3">
+        <div class="first-page">
+            <div class="imgBox">
+                <img src="./img/jpg/about/about1/banner.jpg">
+            </div>
+            <div class="titleBox">
+                <h2 class="ch">關 於 原 成</h2>
+                <h4 class="en">ABOUT COMPANY</h4>
+            </div>
+        </div>
+        <div class="about-menu">
+            <ul>
+                <li class="ch">
+                    <a href="./about.html">
+                        原成思維
+                    </a>
+                </li>
+                <li class="ch">
+                    <a href="./about2.html">
+                        時間之軸
+                    </a>
+                </li>
+                <li class="ch active">
+                    管理政策
+                </li>
+                <li class="ch">
+                    <a href="./about4.html">
+                        未來展望
+                    </a>
+                </li>
+            </ul>
+        </div>
     </main>
 
 
-    <script src="./js/project.js"></script>
-    <script>
-        const imgs = document.querySelectorAll(".project img")
-        let count = 0
-        document.querySelector(".project").addEventListener("click", (e) => {
+    <script src="./js/config.js"></script>
 
-            imgs.forEach((item, i) => {
-                item.classList.remove("active")
-            })
-            if (count < imgs.length - 1) {
-                count = count + 1
-                console.log(count)
-            } else {
-                count = 0
+    <script>
+        window.onload = () => {
+            changeBodyColor()
+            changeMenuColor()
+            window.onscroll = () => {
+                changeMenuColor()
+                changeBodyColor()
             }
-            imgs[count].classList.add("active")
-        })
+
+        }
 
     </script>
 </body>

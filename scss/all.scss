@@ -1,5 +1,6 @@
 @import "_config";
 @import "_index";
+@import "_about";
 
 * {
     margin: 0;
@@ -11,6 +12,7 @@
 
 body {
     transition: background-color 1s;
+    background-color: #e0ded5;
 }
 
 @keyframes rotate {
