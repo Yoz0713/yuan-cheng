@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/all.min.css">
     <title>原成營造</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
 </head>
 
 <body>
@@ -50,12 +51,18 @@
                 </li>
             </ul>
         </div>
+        <button class="hamburger hamburger--collapse phone" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
     </menu>
 
     <main class="about about1">
         <div class="first-page">
             <div class="imgBox">
-                <img src="./img/jpg/about/about1/banner.jpg">
+                <img src="./img/jpg/about/about1/banner.jpg" class="computer">
+                <img src="./img/jpg/about/about1/banner-ph.jpg" class="phone">
             </div>
             <div class="titleBox">
                 <h2 class="ch">關 於 原 成</h2>
@@ -125,7 +132,7 @@
                     <div class="ideaPara">
                         <div class="titleBox">
                             <h4 class="ch">誠信</h5>
-                                <p>誠實信用報價，合理價格承攬</p>
+                                <p>誠實信用報價<span class="computer">，</span><br>合理價格承攬</p>
                         </div>
                     </div>
                 </div>
@@ -138,7 +145,7 @@
                     <div class="ideaPara">
                         <div class="titleBox">
                             <h4 class="ch">務實</h5>
-                                <p>確實施工規劃，按部就班執行</p>
+                                <p>確實施工規劃<span class="computer">，</span><br>按部就班執行</p>
                         </div>
                     </div>
                 </div>
@@ -152,7 +159,7 @@
                     <div class="ideaPara">
                         <div class="titleBox">
                             <h4 class="ch">專業</h5>
-                                <p>展現工程專業，協處種種疑難</p>
+                                <p>展現工程專業<span class="computer">，</span><br>協處種種疑難</p>
                         </div>
                     </div>
                 </div>
@@ -165,7 +172,7 @@
                     <div class="ideaPara">
                         <div class="titleBox">
                             <h4 class="ch">品質</h5>
-                                <p>管控施工材料，呈現最高品質</p>
+                                <p>管控施工材料<span class="computer">，</span><br>呈現最高品質</p>
                         </div>
                     </div>
                 </div>
@@ -183,17 +190,73 @@
             </div>
             <div class="criteriaBox">
                 <div class="circleBox">
-                    <div class="logoBox">
+                    <div class="innerBox">
                         <img src="./img/svg/about1-criteria-logo.svg">
                     </div>
                     <img src="./img/svg/about1-criteria-circle.svg" class="outer-circle">
                     <img src="./img/svg/about1-criteria-circle.svg" class="outer-circle">
                     <img src="./img/svg/about1-criteria-circle.svg" class="outer-circle">
                 </div>
+                <div class="circleBox outer">
+                    <div class="innerBox">
+                        <p><span>01.</span><br>
+                            建立健康施工環境<br>
+                            保障工程品質與<br>
+                            勞工安全</p>
+                    </div>
+                </div>
+                <div class="circleBox outer">
+                    <div class="innerBox">
+                        <p><span>02.</span><br>
+                            全方位驗收<br>
+                            確保公共設施品質<br>
+                            與性能優異</p>
+                    </div>
+                </div>
+                <div class="circleBox outer">
+                    <div class="innerBox">
+                        <p><span>03.</span><br>
+                            導入最新建材與<br>
+                            技術，追求居住<br>
+                            舒適與美感</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fifth-page">
+            <div class="titleBox">
+                <h2>ORGANIZATIONAL STRUCTURE</h2>
+                <h4>組織架構</h4>
+            </div>
+            <div class="imgBox">
+                <img src="./img/svg/about1-fifth-page-bg.svg" class="computer">
+                <img src="./img/svg/about1-fifth-page-bg-ph.svg" class="phone">
+            </div>
+        </div>
+        <div class="sixth-page">
+            <div class="titleBox">
+                <h2>RELATED COMPANY</h2>
+                <h4>關係企業</h4>
+            </div>
+            <div class="circleBox">
+                <div class="circle">
+                    <div class="imgBox">
+                        <img src="./img/svg/about1-sixth-page-bg1.svg">
+                    </div>
+                </div>
+                <div class="circle">
+                    <div class="imgBox">
+                        <img src="./img/svg/about1-sixth-page-bg2.svg">
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-
+    <footer id="footer">
+        <p>Copyright © 2023原成營造工程股份有限公司版權所有</p>
+        <p>地址：桃園市蘆竹區南華一街168號7樓</p>
+        <p>TEL： (03)312-1105~6</p>
+    </footer>
 
     <script src="./js/config.js"></script>
 
@@ -205,7 +268,7 @@
                 changeMenuColor()
                 changeBodyColor()
             }
-
+            hamburger()
         }
 
     </script>

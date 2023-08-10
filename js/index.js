@@ -261,10 +261,14 @@ window.onload = () => {
     pageAnimation()
 
 
+
+    //config part
     changeBodyColor()
     changeMenuColor()
     window.onscroll = () => {
         changeMenuColor()
         changeBodyColor()
     }
+
+    hamburger()
 }

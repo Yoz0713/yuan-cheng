@@ -34,3 +34,18 @@ function changeBodyColor() {
         body.style.backgroundColor = "#9CA5AA"
     }
 }
+
+
+function hamburger() {
+    const hamburger = document.querySelector(".hamburger")
+    const menu = document.querySelector("#menu .navBox")
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("is-active")
+        menu.style.transform = "translateX(100%)"
+        hamburger.className.split(" ").forEach((item) => {
+            if (item === "is-active") {
+                menu.style.transform = "translateX(0%)"
+            }
+        })
+    })
+}
